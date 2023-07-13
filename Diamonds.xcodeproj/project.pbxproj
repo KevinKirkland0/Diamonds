@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4947C32C2A6095F4000D046F /* DiamondsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C32B2A6095F4000D046F /* DiamondsApp.swift */; };
+		4947C32E2A6095F4000D046F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C32D2A6095F4000D046F /* Persistence.swift */; };
+		4947C3312A6095F4000D046F /* Diamonds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4947C32F2A6095F4000D046F /* Diamonds.xcdatamodeld */; };
+		4947C3332A6095F4000D046F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C3322A6095F4000D046F /* ContentView.swift */; };
+		4947C3352A6095F5000D046F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4947C3342A6095F5000D046F /* Assets.xcassets */; };
+		4947C3392A6095F5000D046F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4947C3382A6095F5000D046F /* Preview Assets.xcassets */; };
+		4947C3432A6095F5000D046F /* DiamondsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C3422A6095F5000D046F /* DiamondsTests.swift */; };
+		4947C34D2A6095F5000D046F /* DiamondsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C34C2A6095F5000D046F /* DiamondsUITests.swift */; };
+		4947C34F2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C34E2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4947C33F2A6095F5000D046F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4947C3202A6095F4000D046F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4947C3272A6095F4000D046F;
+			remoteInfo = Diamonds;
+		};
+		4947C3492A6095F5000D046F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4947C3202A6095F4000D046F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4947C3272A6095F4000D046F;
+			remoteInfo = Diamonds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4947C3282A6095F4000D046F /* Diamonds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diamonds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4947C32B2A6095F4000D046F /* DiamondsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsApp.swift; sourceTree = "<group>"; };
+		4947C32D2A6095F4000D046F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4947C3302A6095F4000D046F /* Diamonds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diamonds.xcdatamodel; sourceTree = "<group>"; };
+		4947C3322A6095F4000D046F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4947C3342A6095F5000D046F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4947C3362A6095F5000D046F /* Diamonds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Diamonds.entitlements; sourceTree = "<group>"; };
+		4947C3382A6095F5000D046F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4947C33E2A6095F5000D046F /* DiamondsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiamondsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4947C3422A6095F5000D046F /* DiamondsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsTests.swift; sourceTree = "<group>"; };
+		4947C3482A6095F5000D046F /* DiamondsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiamondsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4947C34C2A6095F5000D046F /* DiamondsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsUITests.swift; sourceTree = "<group>"; };
+		4947C34E2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4947C3252A6095F4000D046F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4947C33B2A6095F5000D046F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4947C3452A6095F5000D046F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4947C31F2A6095F4000D046F = {
+			isa = PBXGroup;
+			children = (
+				4947C32A2A6095F4000D046F /* Diamonds */,
+				4947C3412A6095F5000D046F /* DiamondsTests */,
+				4947C34B2A6095F5000D046F /* DiamondsUITests */,
+				4947C3292A6095F4000D046F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4947C3292A6095F4000D046F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4947C3282A6095F4000D046F /* Diamonds.app */,
+				4947C33E2A6095F5000D046F /* DiamondsTests.xctest */,
+				4947C3482A6095F5000D046F /* DiamondsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4947C32A2A6095F4000D046F /* Diamonds */ = {
+			isa = PBXGroup;
+			children = (
+				4947C32B2A6095F4000D046F /* DiamondsApp.swift */,
+				4947C32D2A6095F4000D046F /* Persistence.swift */,
+				4947C3322A6095F4000D046F /* ContentView.swift */,
+				4947C3342A6095F5000D046F /* Assets.xcassets */,
+				4947C3362A6095F5000D046F /* Diamonds.entitlements */,
+				4947C32F2A6095F4000D046F /* Diamonds.xcdatamodeld */,
+				4947C3372A6095F5000D046F /* Preview Content */,
+			);
+			path = Diamonds;
+			sourceTree = "<group>";
+		};
+		4947C3372A6095F5000D046F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4947C3382A6095F5000D046F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4947C3412A6095F5000D046F /* DiamondsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4947C3422A6095F5000D046F /* DiamondsTests.swift */,
+			);
+			path = DiamondsTests;
+			sourceTree = "<group>";
+		};
+		4947C34B2A6095F5000D046F /* DiamondsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4947C34C2A6095F5000D046F /* DiamondsUITests.swift */,
+				4947C34E2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift */,
+			);
+			path = DiamondsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4947C3272A6095F4000D046F /* Diamonds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4947C3522A6095F5000D046F /* Build configuration list for PBXNativeTarget "Diamonds" */;
+			buildPhases = (
+				4947C3242A6095F4000D046F /* Sources */,
+				4947C3252A6095F4000D046F /* Frameworks */,
+				4947C3262A6095F4000D046F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diamonds;
+			productName = Diamonds;
+			productReference = 4947C3282A6095F4000D046F /* Diamonds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4947C33D2A6095F5000D046F /* DiamondsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4947C3552A6095F5000D046F /* Build configuration list for PBXNativeTarget "DiamondsTests" */;
+			buildPhases = (
+				4947C33A2A6095F5000D046F /* Sources */,
+				4947C33B2A6095F5000D046F /* Frameworks */,
+				4947C33C2A6095F5000D046F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4947C3402A6095F5000D046F /* PBXTargetDependency */,
+			);
+			name = DiamondsTests;
+			productName = DiamondsTests;
+			productReference = 4947C33E2A6095F5000D046F /* DiamondsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4947C3472A6095F5000D046F /* DiamondsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4947C3582A6095F5000D046F /* Build configuration list for PBXNativeTarget "DiamondsUITests" */;
+			buildPhases = (
+				4947C3442A6095F5000D046F /* Sources */,
+				4947C3452A6095F5000D046F /* Frameworks */,
+				4947C3462A6095F5000D046F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4947C34A2A6095F5000D046F /* PBXTargetDependency */,
+			);
+			name = DiamondsUITests;
+			productName = DiamondsUITests;
+			productReference = 4947C3482A6095F5000D046F /* DiamondsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4947C3202A6095F4000D046F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4947C3272A6095F4000D046F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					4947C33D2A6095F5000D046F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4947C3272A6095F4000D046F;
+					};
+					4947C3472A6095F5000D046F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4947C3272A6095F4000D046F;
+					};
+				};
+			};
+			buildConfigurationList = 4947C3232A6095F4000D046F /* Build configuration list for PBXProject "Diamonds" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4947C31F2A6095F4000D046F;
+			productRefGroup = 4947C3292A6095F4000D046F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4947C3272A6095F4000D046F /* Diamonds */,
+				4947C33D2A6095F5000D046F /* DiamondsTests */,
+				4947C3472A6095F5000D046F /* DiamondsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4947C3262A6095F4000D046F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4947C3392A6095F5000D046F /* Preview Assets.xcassets in Resources */,
+				4947C3352A6095F5000D046F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4947C33C2A6095F5000D046F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4947C3462A6095F5000D046F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4947C3242A6095F4000D046F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4947C3312A6095F4000D046F /* Diamonds.xcdatamodeld in Sources */,
+				4947C32C2A6095F4000D046F /* DiamondsApp.swift in Sources */,
+				4947C3332A6095F4000D046F /* ContentView.swift in Sources */,
+				4947C32E2A6095F4000D046F /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4947C33A2A6095F5000D046F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4947C3432A6095F5000D046F /* DiamondsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4947C3442A6095F5000D046F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4947C34F2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift in Sources */,
+				4947C34D2A6095F5000D046F /* DiamondsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4947C3402A6095F5000D046F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4947C3272A6095F4000D046F /* Diamonds */;
+			targetProxy = 4947C33F2A6095F5000D046F /* PBXContainerItemProxy */;
+		};
+		4947C34A2A6095F5000D046F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4947C3272A6095F4000D046F /* Diamonds */;
+			targetProxy = 4947C3492A6095F5000D046F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4947C3502A6095F5000D046F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4947C3512A6095F5000D046F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4947C3532A6095F5000D046F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Diamonds/Diamonds.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diamonds/Preview Content\"";
+				DEVELOPMENT_TEAM = X8E48FAFLH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = The.Diamonds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4947C3542A6095F5000D046F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Diamonds/Diamonds.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diamonds/Preview Content\"";
+				DEVELOPMENT_TEAM = X8E48FAFLH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = The.Diamonds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4947C3562A6095F5000D046F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8E48FAFLH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = The.DiamondsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diamonds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Diamonds";
+			};
+			name = Debug;
+		};
+		4947C3572A6095F5000D046F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8E48FAFLH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = The.DiamondsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diamonds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Diamonds";
+			};
+			name = Release;
+		};
+		4947C3592A6095F5000D046F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8E48FAFLH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = The.DiamondsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Diamonds;
+			};
+			name = Debug;
+		};
+		4947C35A2A6095F5000D046F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8E48FAFLH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = The.DiamondsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Diamonds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4947C3232A6095F4000D046F /* Build configuration list for PBXProject "Diamonds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4947C3502A6095F5000D046F /* Debug */,
+				4947C3512A6095F5000D046F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4947C3522A6095F5000D046F /* Build configuration list for PBXNativeTarget "Diamonds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4947C3532A6095F5000D046F /* Debug */,
+				4947C3542A6095F5000D046F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4947C3552A6095F5000D046F /* Build configuration list for PBXNativeTarget "DiamondsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4947C3562A6095F5000D046F /* Debug */,
+				4947C3572A6095F5000D046F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4947C3582A6095F5000D046F /* Build configuration list for PBXNativeTarget "DiamondsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4947C3592A6095F5000D046F /* Debug */,
+				4947C35A2A6095F5000D046F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4947C32F2A6095F4000D046F /* Diamonds.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4947C3302A6095F4000D046F /* Diamonds.xcdatamodel */,
+			);
+			currentVersion = 4947C3302A6095F4000D046F /* Diamonds.xcdatamodel */;
+			path = Diamonds.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4947C3202A6095F4000D046F /* Project object */;
+}

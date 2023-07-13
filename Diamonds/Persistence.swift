@@ -1,8 +1,8 @@
 //
 //  Persistence.swift
-//  Diamonds
+//  Ballparks
 //
-//  Created by Kevin Kirkland on 7/13/23.
+//  Created by Kevin Kirkland on 7/12/23.
 //
 
 import CoreData
@@ -31,7 +31,7 @@ struct PersistenceController {
     let container: NSPersistentCloudKitContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentCloudKitContainer(name: "Diamonds")
+        container = NSPersistentCloudKitContainer(name: "Ballparks")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

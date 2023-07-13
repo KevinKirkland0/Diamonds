@@ -16,6 +16,8 @@
 		4947C3432A6095F5000D046F /* DiamondsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C3422A6095F5000D046F /* DiamondsTests.swift */; };
 		4947C34D2A6095F5000D046F /* DiamondsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C34C2A6095F5000D046F /* DiamondsUITests.swift */; };
 		4947C34F2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C34E2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift */; };
+		4947C35C2A609825000D046F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C35B2A609825000D046F /* View.swift */; };
+		4947C35E2A609A4D000D046F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C35D2A609A4D000D046F /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4947C3482A6095F5000D046F /* DiamondsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiamondsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4947C34C2A6095F5000D046F /* DiamondsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsUITests.swift; sourceTree = "<group>"; };
 		4947C34E2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4947C35B2A609825000D046F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		4947C35D2A609A4D000D046F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				4947C32B2A6095F4000D046F /* DiamondsApp.swift */,
 				4947C32D2A6095F4000D046F /* Persistence.swift */,
 				4947C3322A6095F4000D046F /* ContentView.swift */,
+				4947C35B2A609825000D046F /* View.swift */,
+				4947C35D2A609A4D000D046F /* ImagePicker.swift */,
 				4947C3342A6095F5000D046F /* Assets.xcassets */,
 				4947C3362A6095F5000D046F /* Diamonds.entitlements */,
 				4947C32F2A6095F4000D046F /* Diamonds.xcdatamodeld */,
@@ -267,6 +273,8 @@
 			files = (
 				4947C3312A6095F4000D046F /* Diamonds.xcdatamodeld in Sources */,
 				4947C32C2A6095F4000D046F /* DiamondsApp.swift in Sources */,
+				4947C35C2A609825000D046F /* View.swift in Sources */,
+				4947C35E2A609A4D000D046F /* ImagePicker.swift in Sources */,
 				4947C3332A6095F4000D046F /* ContentView.swift in Sources */,
 				4947C32E2A6095F4000D046F /* Persistence.swift in Sources */,
 			);
@@ -442,7 +450,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = The.Diamonds;
+				PRODUCT_BUNDLE_IDENTIFIER = "The.Noted-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -480,7 +488,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = The.Diamonds;
+				PRODUCT_BUNDLE_IDENTIFIER = "The.Noted-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";

@@ -1,4 +1,5 @@
 import SwiftUI
+//testing
 
 struct StadiumDetailView: View {
     @ObservedObject var stadium: Stadium
@@ -9,7 +10,7 @@ struct StadiumDetailView: View {
         VStack {
             // Stadium name at the top
             Text(stadium.name)
-                .font(.custom("NewYork", size: 40))  // replace "YourFontName" with the actual name of your font
+                .font(.custom("NewYork", size: 39))  // replace "YourFontName" with the actual name of your font
                 .bold()
                 .padding(.top)
 

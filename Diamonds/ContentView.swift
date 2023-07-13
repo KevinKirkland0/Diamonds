@@ -1,7 +1,7 @@
 import SwiftUI
 import MapKit
 
-
+//testing
 class Stadium: Identifiable, ObservableObject {
     let id = UUID()
     let name: String

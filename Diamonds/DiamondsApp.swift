@@ -6,6 +6,7 @@
 //testing
 
 import SwiftUI
+import CoreData
 
 @main
 struct DiamondsApp: App {

@@ -9,15 +9,18 @@
 /* Begin PBXBuildFile section */
 		4947C32C2A6095F4000D046F /* DiamondsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C32B2A6095F4000D046F /* DiamondsApp.swift */; };
 		4947C32E2A6095F4000D046F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C32D2A6095F4000D046F /* Persistence.swift */; };
-		4947C3312A6095F4000D046F /* Diamonds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4947C32F2A6095F4000D046F /* Diamonds.xcdatamodeld */; };
 		4947C3332A6095F4000D046F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C3322A6095F4000D046F /* ContentView.swift */; };
 		4947C3352A6095F5000D046F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4947C3342A6095F5000D046F /* Assets.xcassets */; };
 		4947C3392A6095F5000D046F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4947C3382A6095F5000D046F /* Preview Assets.xcassets */; };
 		4947C3432A6095F5000D046F /* DiamondsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C3422A6095F5000D046F /* DiamondsTests.swift */; };
 		4947C34D2A6095F5000D046F /* DiamondsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C34C2A6095F5000D046F /* DiamondsUITests.swift */; };
 		4947C34F2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C34E2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift */; };
-		4947C35C2A609825000D046F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C35B2A609825000D046F /* View.swift */; };
+		4947C35C2A609825000D046F /* StadiumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C35B2A609825000D046F /* StadiumDetailView.swift */; };
 		4947C35E2A609A4D000D046F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C35D2A609A4D000D046F /* ImagePicker.swift */; };
+		49648B452A61F545005D670A /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491477002A61DC5400CAC09F /* Image+CoreDataClass.swift */; };
+		49648B462A61F548005D670A /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491477012A61DC5400CAC09F /* Image+CoreDataProperties.swift */; };
+		49648B472A61F54C005D670A /* Stadium+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C3652A610BD8000D046F /* Stadium+CoreDataClass.swift */; };
+		49648B482A61F550005D670A /* Stadium+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947C3662A610BD8000D046F /* Stadium+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		491476FD2A61BD5A00CAC09F /* Diamonds 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Diamonds 2.xcdatamodel"; sourceTree = "<group>"; };
+		491477002A61DC5400CAC09F /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		491477012A61DC5400CAC09F /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4947C3282A6095F4000D046F /* Diamonds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diamonds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4947C32B2A6095F4000D046F /* DiamondsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsApp.swift; sourceTree = "<group>"; };
 		4947C32D2A6095F4000D046F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -51,8 +57,10 @@
 		4947C3482A6095F5000D046F /* DiamondsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiamondsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4947C34C2A6095F5000D046F /* DiamondsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsUITests.swift; sourceTree = "<group>"; };
 		4947C34E2A6095F5000D046F /* DiamondsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4947C35B2A609825000D046F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		4947C35B2A609825000D046F /* StadiumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumDetailView.swift; sourceTree = "<group>"; };
 		4947C35D2A609A4D000D046F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4947C3652A610BD8000D046F /* Stadium+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stadium+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4947C3662A610BD8000D046F /* Stadium+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stadium+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,10 @@
 		4947C31F2A6095F4000D046F = {
 			isa = PBXGroup;
 			children = (
+				491477002A61DC5400CAC09F /* Image+CoreDataClass.swift */,
+				491477012A61DC5400CAC09F /* Image+CoreDataProperties.swift */,
+				4947C3652A610BD8000D046F /* Stadium+CoreDataClass.swift */,
+				4947C3662A610BD8000D046F /* Stadium+CoreDataProperties.swift */,
 				4947C32A2A6095F4000D046F /* Diamonds */,
 				4947C3412A6095F5000D046F /* DiamondsTests */,
 				4947C34B2A6095F5000D046F /* DiamondsUITests */,
@@ -106,7 +118,7 @@
 				4947C32B2A6095F4000D046F /* DiamondsApp.swift */,
 				4947C32D2A6095F4000D046F /* Persistence.swift */,
 				4947C3322A6095F4000D046F /* ContentView.swift */,
-				4947C35B2A609825000D046F /* View.swift */,
+				4947C35B2A609825000D046F /* StadiumDetailView.swift */,
 				4947C35D2A609A4D000D046F /* ImagePicker.swift */,
 				4947C3342A6095F5000D046F /* Assets.xcassets */,
 				4947C3362A6095F5000D046F /* Diamonds.entitlements */,
@@ -271,12 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4947C3312A6095F4000D046F /* Diamonds.xcdatamodeld in Sources */,
 				4947C32C2A6095F4000D046F /* DiamondsApp.swift in Sources */,
-				4947C35C2A609825000D046F /* View.swift in Sources */,
+				49648B472A61F54C005D670A /* Stadium+CoreDataClass.swift in Sources */,
+				4947C35C2A609825000D046F /* StadiumDetailView.swift in Sources */,
+				49648B482A61F550005D670A /* Stadium+CoreDataProperties.swift in Sources */,
 				4947C35E2A609A4D000D046F /* ImagePicker.swift in Sources */,
+				49648B452A61F545005D670A /* Image+CoreDataClass.swift in Sources */,
 				4947C3332A6095F4000D046F /* ContentView.swift in Sources */,
 				4947C32E2A6095F4000D046F /* Persistence.swift in Sources */,
+				49648B462A61F548005D670A /* Image+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,9 +648,10 @@
 		4947C32F2A6095F4000D046F /* Diamonds.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				491476FD2A61BD5A00CAC09F /* Diamonds 2.xcdatamodel */,
 				4947C3302A6095F4000D046F /* Diamonds.xcdatamodel */,
 			);
-			currentVersion = 4947C3302A6095F4000D046F /* Diamonds.xcdatamodel */;
+			currentVersion = 491476FD2A61BD5A00CAC09F /* Diamonds 2.xcdatamodel */;
 			path = Diamonds.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

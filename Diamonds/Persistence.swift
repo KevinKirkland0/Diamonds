@@ -22,14 +22,28 @@ class PersistenceController {
         })
 
         container.viewContext.automaticallyMergesChangesFromParent = true
-
-        initializeStadiumData()
     }
 
+
+
+
+
+    private func initializeStadiumData() {
+        let viewContext = container.viewContext
+        let _: NSFetchRequest<Stadium> = Stadium.fetchRequest()
+
+        // Rest of the code to initialize stadium data...
+    }
+}
+
+
+
     
-    func initializeStadiumData() {
-        let viewContext = self.container.viewContext
-        let fetchRequest: NSFetchRequest<Stadium> = Stadium.fetchRequest()
+func initializeStadiumData(container: NSPersistentCloudKitContainer) {
+    let viewContext = container.viewContext
+    let fetchRequest: NSFetchRequest<Stadium> = Stadium.fetchRequest()
+
+    // Rest of the code to initialize stadium data...
         
         do {
             fetchRequest.entity = Stadium.entity() // Configure the fetch request to fetch Stadium entities
@@ -83,15 +97,17 @@ class PersistenceController {
                     (name: "Coors Field", latitude: 39.7559, longitude: -104.9942, image: "coorsImage", visited: false, notes: "")
                 ]
                                
-                               for data in stadiumData {
-                                   let stadium = Stadium(context: viewContext)
-                                   stadium.name = data.name
-                                   stadium.coordinateLatitude = data.latitude
-                                   stadium.coordinateLongitude = data.longitude
-                                   stadium.image = data.image
-                                   stadium.visited = data.visited
-                                   stadium.notes = data.notes
-                               }
+                for data in stadiumData {
+                    let stadium = Stadium(context: viewContext)
+                    stadium.name = data.name
+                    stadium.coordinateLatitude = data.latitude
+                    stadium.coordinateLongitude = data.longitude
+                    stadium.visited = data.visited
+                    stadium.notes = data.notes
+                    // You no longer have an `image` attribute, but an `imageData` attribute.
+                    // You could load the image data here if you have it, but for now, I'll set it to nil.
+                    stadium.imageData = nil
+                }
                                
                                do {
                                    try viewContext.save()
@@ -105,6 +121,6 @@ class PersistenceController {
                            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
                        }
                    }
-               }
+
     
 

@@ -22,17 +22,16 @@ class PersistenceController {
         })
 
         container.viewContext.automaticallyMergesChangesFromParent = true
+
+        // Call the initialization function
+        initializeStadiumData()
     }
-
-
-
-
 
     private func initializeStadiumData() {
         let viewContext = container.viewContext
-        let _: NSFetchRequest<Stadium> = Stadium.fetchRequest()
 
         // Rest of the code to initialize stadium data...
+        // The rest of the function remains the same
     }
 }
 

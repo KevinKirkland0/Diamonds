@@ -10,7 +10,7 @@ struct StadiumDetailView: View {
     @State private var deleteImage: IdentifiableImage?
     @State private var selectedImage: IdentifiableImage?
     
-    var fetchedImages: FetchedResults<Image> {
+    var fetchedImages: [Image] {
         let fetchRequest: NSFetchRequest<Image> = Image.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(keyPath: \Image.timestamp, ascending: true)]
         fetchRequest.predicate = NSPredicate(format: "stadium == %@", argumentArray: [stadium])
@@ -30,8 +30,8 @@ struct StadiumDetailView: View {
     var body: some View {
         ZStack {
             if let imageData = fetchedImages.first?.imageData,
-               let image = UIImage(data: imageData) ?? UIImage(named: "defaultImage") {
-                Image(uiImage: image)
+               let uiImage = UIImage(data: imageData) {
+                Image(uiImage: uiImage)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             } else {
@@ -108,21 +108,24 @@ struct StadiumDetailView: View {
     }
     
     func saveImages() {
+        let viewContext = PersistenceController.shared.container.viewContext
+        let stadiumEntity = stadium
+
         for image in selectedImages {
-            guard let imageData = image.imageData else {
+            guard let imageData = image.image.jpegData(compressionQuality: 1.0) else {
                 continue
             }
-            
+
             let imageEntity = Image(context: viewContext)
             imageEntity.imageData = imageData
             imageEntity.timestamp = Date()
-            imageEntity.stadium = stadium
-            
-            do {
-                try viewContext.save()
-            } catch {
-                print("Failed to save image: \(error)")
-            }
+            imageEntity.stadium = stadiumEntity
+        }
+
+        do {
+            try viewContext.save()
+        } catch {
+            print("Failed to save images: \(error)")
         }
     }
     
@@ -147,16 +150,16 @@ struct StadiumDetailView: View {
 
 struct IdentifiableImage: Identifiable, Equatable {
     let id: UUID
-    let imageData: Data
+    let image: UIImage
 }
 
 struct StadiumDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let context = PersistenceController.preview.container.viewContext
+        let persistenceController = PersistenceController()
+        let context = persistenceController.container.viewContext
         let stadium = Stadium(context: context)
         stadium.name = "Sample Stadium"
         return StadiumDetailView(stadium: stadium)
             .environment(\.managedObjectContext, context)
     }
 }
-    
